@@ -1,0 +1,217 @@
+:root{
+    --g1: linear-gradient(35deg, orange, rgb(255, 136, 0));
+    --c1:rgb(4, 130, 40);
+}
+
+.card1{
+    margin-top: 10vh;
+    border-radius: 25px;
+    border: 1px solid var(--c1);
+    padding: 2vmin 3vmin;
+    margin-inline: auto;
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+.info{
+    /* outline: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1vh;
+    border: 1px solid;
+    padding: 1vmin;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.info i{
+    /* outline: 1px solid blue; */
+    font-size: 1.2rem;
+}
+
+h2{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.grid{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1  0px;
+    border: 1px solid var(--c1);
+    padding: 6vmin 3vmin;
+    border-bottom-right-radius: 25%;
+    position: relative;
+    text-shadow: 2px 0 5px rgb(0, 0, 0);
+    transition: 0.8s ease;
+}
+
+
+
+h3{
+    color: white;
+    text-shadow: 2px 0 5px var(--c1);
+    margin-top: 2vh;
+}
+
+.service i {
+    font-size: 3rem;
+}
+
+.service button{
+    background: none;
+    padding: 1vmin 2vmin;
+    border-radius: 5px;
+    border: 2px solid var(--c1);
+    transition: 0.2s ease;
+    margin-top: 1vh;
+    text-shadow: 2px 0 5px rgb(0, 0, 0);
+    color: white;
+}
+
+
+
+.service::before{
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background: var(--c1);
+    transform: rotate(45deg);
+    top: -4vmin;
+}
+
+.service1{
+    background: url("./service1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service2{
+    background: url("./service2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service3{
+    background: url("./service3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service4{
+    background: url("./service4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service5{
+    background: url("./service5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service6{
+    background: url("./service6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service7{
+    background: url("./service7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service8{
+    background: url("./service8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service9{
+    background: url("./service9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service10{
+    background: url("./service10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service11{
+    background: url("./service11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+.service12{
+    background: url("./service12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: glow 1s alternate infinite;
+}
+
+
+.service .content{
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 0 25px rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2vmin 1vmin;
+}
+
+footer{
+    background: var(--c1);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1vmin;
+}
+@media (width>1000px) {
+    .card1{
+        width: 40%;
+    }
+    .info{
+        width: 60%;
+    }
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-inline: 180px;
+    }
+    .service::before{
+            top: -2.1vmin;
+    }
+    .service button:hover{
+        background: var(--c1);
+        cursor: pointer;
+        color: white;
+    }
+    .service:hover{
+        transform: scale(1.02);
+    }
+}
